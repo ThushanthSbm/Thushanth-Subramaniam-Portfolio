@@ -1,0 +1,212 @@
+.section__subtitle{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contacts__data {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    align-items:flex-start; /* Aligns items vertically */
+}
+
+.contact__social-link {
+    background-color: var(--tittle-color);
+    color: var(--container-color);
+    font-size: 1.125rem;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin-right: 10px; /* Adds some space between icon and text */
+}
+
+.contact__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 22px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-bottom: 0.6rem;
+}
+
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100%;
+    margin-top: 18px;
+
+}
+
+.contact__content {
+    width: 100%; /* Ensure the content occupies the available width */
+    max-width: 600px; /* Adjust the max-width as needed */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+.contact__form {
+    width: 100%; /* Fill the available width */
+}
+
+.contact__title {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Make button width 100% to match form width */
+}
+
+.contact__info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 200px;
+}
+
+.contact__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0 , 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
+
+.contact__card-title,
+.contact__card-data {
+    font-size: var(--small-font-size);
+}
+
+.contact__card-title {
+    font-weight: var(--font-medium);
+}
+
+.contact__card-data {
+    display: block;
+    margin-bottom: var(--mb-0-75);
+}
+
+.contact__button {
+    color: #fff;
+    font-size: var(--small-font-size);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    column-gap: 0.25rem;
+    width: 100%; 
+    margin: 0 auto; 
+    margin-bottom: 1.5rem; 
+}
+
+.button--flex {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.contact__button-icon {
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact__button:hover .contact__button-icon {
+    transform: translate(0.25rem);
+}
+
+.contact__form-div {
+    position: relative;
+    margin-bottom: var(--mb-2);
+    height: 4rem;
+}
+
+.contact__form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.contact__form-tag {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: var(--smaller-font-size);
+    padding: 0.25rem;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.contact__form-area {
+    height: 12.5rem;
+    resize: none;
+}
+
+
+
+
+
+
+/* Breakpoints */
+@media screen and (max-width: 992px) {
+    .contact__container{
+        column-gap: 3rem;
+    }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact__container{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .contact__info{
+        justify-content: center;
+    }
+
+    .contact__form {
+        margin: 0 auto;
+    }
+
+    .contacts__data {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .contact__social-link {
+        margin-bottom: 10px; 
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .contact__info{
+        grid-template-columns: 1fr;
+    }
+    .contact__form{
+        width: 100%;
+    }
+
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .break-mobile {
+        display: none;
+      }
+
+  }
+  

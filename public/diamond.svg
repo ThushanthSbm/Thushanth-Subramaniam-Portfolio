@@ -1,0 +1,71 @@
+<!-- <svg width="100%" height="100%" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #000; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #fff; stop-opacity: 0.1" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#waveGradient)" fill-opacity="0.5" d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,170.7C560,160,640,128,720,101.3C800,75,880,53,960,74.7C1040,96,1120,160,1200,176C1280,192,1360,160,1400,144L1440,128V0H1400C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0H0Z">
+    <animate 
+      attributeName="d" 
+      values="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,170.7C560,160,640,128,720,101.3C800,75,880,53,960,74.7C1040,96,1120,160,1200,176C1280,192,1360,160,1400,144L1440,128V0H1400C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0H0Z;
+              M0,192L60,200C120,208,240,224,360,208C480,192,600,144,720,144C840,144,960,192,1080,202.7C1200,213,1320,187,1380,176L1440,160V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z" 
+      repeatCount="indefinite" 
+      dur="10s"
+    />
+  </path>
+</svg> -->
+
+
+<svg width="100%" height="100%" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Wave -->
+  <defs>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #000; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #fff; stop-opacity: 0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Wave Animation -->
+  <path fill="url(#waveGradient)" fill-opacity="0.5" d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,170.7C560,160,640,128,720,101.3C800,75,880,53,960,74.7C1040,96,1120,160,1200,176C1280,192,1360,160,1400,144L1440,128V0H1400C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0H0Z">
+    <animate 
+      attributeName="d" 
+      values="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,170.7C560,160,640,128,720,101.3C800,75,880,53,960,74.7C1040,96,1120,160,1200,176C1280,192,1360,160,1400,144L1440,128V0H1400C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0H0Z;
+              M0,192L60,200C120,208,240,224,360,208C480,192,600,144,720,144C840,144,960,192,1080,202.7C1200,213,1320,187,1380,176L1440,160V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z" 
+      repeatCount="indefinite" 
+      dur="10s"
+    />
+  </path>
+
+  <!-- Transparent Triangles with Rotation Animation -->
+  <polygon points="100,50 104,58 96,58" fill="black" fill-opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 50" to="360 100 50" dur="5s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="250,100 254,108 246,108" fill="black" fill-opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" from="0 250 100" to="360 250 100" dur="6s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="400,75 404,83 396,83" fill="black" fill-opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" from="0 400 75" to="360 400 75" dur="7s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="600,120 604,128 596,128" fill="black" fill-opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 120" to="360 600 120" dur="5.5s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="750,30 754,38 746,38" fill="black" fill-opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 750 30" to="360 750 30" dur="6.5s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="900,90 904,98 896,98" fill="black" fill-opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 900 90" to="360 900 90" dur="5s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="1050,60 1054,68 1046,68" fill="black" fill-opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" from="0 1050 60" to="360 1050 60" dur="7s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="1200,110 1204,118 1196,118" fill="black" fill-opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" from="0 1200 110" to="360 1200 110" dur="6s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="1350,45 1354,53 1346,53" fill="black" fill-opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" from="0 1350 45" to="360 1350 45" dur="5.8s" repeatCount="indefinite"/>
+  </polygon>
+  <polygon points="1440,80 1444,88 1436,88" fill="black" fill-opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 1440 80" to="360 1440 80" dur="6.2s" repeatCount="indefinite"/>
+  </polygon>
+</svg>
