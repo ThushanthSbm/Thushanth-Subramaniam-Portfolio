@@ -10,30 +10,40 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_09ap38c', 'template_28cek2f', form.current, {
-        publicKey: '979-dhiuQK91dMkMb',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          Swal.fire({
-            icon: 'success',
-            title: 'Message sent successfully!',
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          Swal.fire({
-            icon: 'error',
-            title: 'Message was not sent.',
-            text: 'Please try again!',
-          });
-        }
-      );
+    .sendForm('service_09ap38c', 'template_28cek2f', form.current, {
+      publicKey: '979-dhiuQK91dMkMb',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        Swal.fire({
+          icon: 'success',
+          title: 'Message sent successfully!',
+          showConfirmButton: false,
+          timer: 1500,
+          customClass: {
+            popup: 'swal-popup',
+            title: 'swal-title',
+            icon: 'swal-icon-success',
+          },
+        });
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Message was not sent.',
+          text: 'Please try again!',
+          customClass: {
+            popup: 'swal-popup-error',
+            title: 'swal-title-error',
+            icon: 'swal-icon-error',
+          },
+        });
+      }
+    );
 
-    e.target.reset();
+  e.target.reset();
   };
 
   return (
