@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import "./contact.css";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const form = useRef();
@@ -56,7 +57,7 @@ const Contact = () => {
         <i className='bx bx-map' style={{ fontSize: '1.5rem', color: '#e42020' }}></i>
         <div>
           <h3 className="contact__name">
-            <span style={{ color: '#808080' }}>Location:</span> Periyathoodam, Karaveddi Center, Karaveddi, Jaffna, Srilanka.
+            <span style={{ color: '#808080' }}>Location:</span> Bahnhofstrasse 67 94469 Deggendorf Germany.
           </h3>
         </div>
       </div>
@@ -69,7 +70,16 @@ const Contact = () => {
         </div>
         <i className='bx bx-phone-call' style={{ fontSize: '1.3rem', color: '#e42020' }}></i>
         <h3 className="contact__name">
-          <span style={{ color: '#808080' }}>Call:</span> +94 773 559 319
+          <span style={{ color: '#808080' }}>Call:</span> +49 1577 8696 214{' '}
+          <a
+            href="https://wa.me/94773559319"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginLeft: '8px', color: '#25D366' }}
+          >
+            <FaWhatsapp />
+          </a>
+          +94 773 559 319
         </h3>
       </div>
       <div className="contact__container container">

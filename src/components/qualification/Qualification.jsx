@@ -31,13 +31,12 @@ const Qualification = () => {
 
                 <div className="qualification__sections">
                     <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                        <div className="qualification__data">
+                    <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">BSc (Hons) in Information Technology
-                                Specialising in Information Technology</h3>
-                                <span className="qualification__subtitle">Sri Lanka Institute of Information Technology</span>
+                                <h3 className="qualification__title">MSc Program life science informatics Winter Semester 2025/26</h3>
+                                <span className="qualification__subtitle">Technische Hochschule Deggendorf, Germany </span>
                                 <div className="qualification__calendar">
-                                    <i className='bx bx-calendar'></i> Graduated in December 2022
+                                    <i className='bx bx-calendar'></i> I will begin my MSc course on October 1st, 2025
                                 </div>
                             </div>
                             <div>
@@ -52,11 +51,25 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
+                                <h3 className="qualification__title">BSc (Hons) in Information Technology 
+                                    Specialising in Information Technology</h3>
+                                <span className="qualification__subtitle">Sri Lanka Institute of Information Technology</span>
+                                <div className="qualification__calendar">
+                                    <i className='bx bx-calendar'></i> Graduated in December 2022
+                                </div>
+                            </div>
+                        </div>
+                        <div className="qualification__data">
+                            <div>
                                 <h3 className="qualification__title">GCE Advanced Level</h3>
                                 <span className="qualification__subtitle">Hartley College - PointPedro</span>
                                 <div className="qualification__calendar">
                                     <i className='bx bx-calendar'></i> Class of 2016
                                 </div>
+                            </div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
                             </div>
                         </div>
 
