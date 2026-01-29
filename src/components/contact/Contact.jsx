@@ -57,7 +57,7 @@ const Contact = () => {
         <i className='bx bx-map' style={{ fontSize: '1.5rem', color: '#e42020' }}></i>
         <div>
           <h3 className="contact__name">
-            <span style={{ color: '#808080' }}>Location:</span> Bahnhofstrasse 67 94469 Deggendorf Germany.
+            <span style={{ color: '#808080' }}>Location:</span> Griesfeldstraße 9, 85354 Freising Germany.
           </h3>
         </div>
       </div>
